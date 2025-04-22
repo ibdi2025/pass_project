@@ -1,5 +1,6 @@
 from hashlib import sha256
 import requests
+import json
 
 
 class File:
@@ -91,14 +92,14 @@ class File:
             print()
             print("Access granted for username/hash:")
             print(self.list[0], self.list[1])
-            API_ENDPOINT = "https://pastebin.com/api/api_post.php"
-            API_KEY = "x5fQasiQOuKkcp2FTaFgghmRuqqUW2t1"
+            api_endpoint = "https://pastebin.com/api/api_post.php"
+            api_key = "x5fQasiQOuKkcp2FTaFgghmRuqqUW2t1"
             source_code =("username:" + self.list[0] + "   " +"hash: "+ self.list[1])
-            data = {'api_dev_key': API_KEY,
+            data = {'api_dev_key': api_key,
                     'api_option': 'paste',
                     'api_paste_code': source_code,
                     }
-            r = requests.post(url=API_ENDPOINT, data=data)
+            r = requests.post(url=api_endpoint, data=data)
             pastebin_url = r.text
             print("Your login data have been stored safely.")
             print("The pastebin URL is:%s" % pastebin_url)
@@ -107,6 +108,10 @@ class File:
             print()
             print("Login failed - incorrect password")
             print(self.list[0], self.list[1])
+            api_url = "https://run.mocky.io/v3/1aed60ec-40a9-4e10-b77e-225c07a9be2d"
+            response = requests.get(api_url)
+            data=response.json()
+            print(data)
 
 
 
