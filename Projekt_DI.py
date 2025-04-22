@@ -110,8 +110,12 @@ class File:
             print(self.list[0], self.list[1])
             api_url = "https://run.mocky.io/v3/1aed60ec-40a9-4e10-b77e-225c07a9be2d"
             response = requests.get(api_url)
-            data=response.json()
-            print(data)
+            j=response.json()
+            data=dict(j[0])
+            for keys, values in data.items():
+                print("******" + keys + "******")
+                print(values)
+
 
 
 
