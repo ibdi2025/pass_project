@@ -1,0 +1,31 @@
+(.venv) PS C:\Users\DELL\Documents\RD_Python\projekty> C:\Users\DELL\AppData\Roaming\Python\Python313\Scripts\pytest -s
+=============================================================================== test session starts ===============================================================================
+platform win32 -- Python 3.13.2, pytest-8.3.5, pluggy-1.5.0
+rootdir: C:\Users\DELL\Documents\RD_Python\projekty
+collecting ... 
+
+_____________________________________
+List of already created usernames:
+UserName
+_____________________________________
+
+Enter new username to create: Jan
+Enter password to create: d3
+
+Username and Hash have been writen. Let's do a test!
+
+Login simulation - enter password for "Jan": d3
+
+Hash check: f451a61749c611ba0fa0e16c61831db44f38c611dff25879cf271a24c81a88b6
+
+Access granted for username/hash:
+Jan f451a61749c611ba0fa0e16c61831db44f38c611dff25879cf271a24c81a88b6
+
+Your login data have been stored safely.
+The pastebin URL is:https://pastebin.com/FQtra3qf
+collected 1 item                                                                                                                                                                    
+
+tests\test_pass.py .
+
+=============================================================================== 1 passed in 15.43s ================================================================================ 
+
