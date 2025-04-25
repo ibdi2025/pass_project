@@ -1,27 +1,31 @@
-(.venv) PS C:\Users\DELL\Documents\RD_Python\projekty> C:\Users\DELL\AppData\Roaming\Python\Python313\Scripts\pytest -s
+
+(.venv) PS C:\Users\DELL\Documents\RD_Python\projekty> pytest -s
 =============================================================================== test session starts ===============================================================================
 platform win32 -- Python 3.13.2, pytest-8.3.5, pluggy-1.5.0
 rootdir: C:\Users\DELL\Documents\RD_Python\projekty
 collecting ... 
+
 _____________________________________
 List of already created usernames:
 UserName
 _____________________________________
-
 Enter new username to create: Jan
-Enter password to create: alfa
+Enter password to create: abc
+
 Username and Hash have been writen. Let's do a test!
 
-Login simulation - enter password for "Jan": alfa
-Hash check: a405eba78bf2e6db44ebe0b28bbc9cdc449f9ac990d2029c50a15e6853cfdf20
+Login simulation - enter password for "Jan": abc
+Hash check: ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
 
 Access granted for username/hash:
-Jan a405eba78bf2e6db44ebe0b28bbc9cdc449f9ac990d2029c50a15e6853cfdf20
+Jan ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
 
 Your login data have been stored safely.
+
 The pastebin URL is:Bad API request, Post limit, maximum pastes per 24h reached
 collected 2 items                                                                                                                                                                   
 
 tests\test_pass.py ..
 
-=============================================================================== 2 passed in 10.56s ================================================================================ 
+=============================================================================== 2 passed in 11.46s ================================================================================ 
+
